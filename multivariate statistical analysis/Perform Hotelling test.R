@@ -1,4 +1,4 @@
-#Ex7:
+
 # you have matrix x = [6 9, 10 6, 8 3] and µ [9, 5]
 # Perform Hotelling test 95%
 

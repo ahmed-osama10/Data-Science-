@@ -1,0 +1,9 @@
+sim_norm_calc_mean=function(){
+  data=rnorm(n=20,mean=3,sd=2)
+  sum(data)/length(data)
+}
+sim_norm_mean=replicate(n=2500,sim_norm_calc_mean())
+hist(sim_norm_mean,probability=T)
+grid()
+box()
+curve(dnorm(x,3,sqrt(4/20)),add=TRUE,col='red')

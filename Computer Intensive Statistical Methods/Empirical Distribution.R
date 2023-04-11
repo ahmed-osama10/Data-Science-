@@ -1,0 +1,10 @@
+install.packages("dplyr", dependencies = TRUE) 
+install.packages("ggplot2", dependencies = TRUE) 
+install.packages("ggpubr", dependencies = TRUE) 
+install.packages("gcookbook", dependencies = TRUE)
+library(dplyr) 
+library(ggplot2) 
+library(ggpubr) 
+library(gcookbook)
+p = ggplot(data.frame(x = c(-3, 3)), aes(x = x)) + 
+  stat_function(fun = pnorm, colour="#D55E00", size=1)

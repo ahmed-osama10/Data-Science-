@@ -1,4 +1,4 @@
-# Lec3 Example
+
 library(matlib)
 # Given
 n <- 40
@@ -32,7 +32,7 @@ T0 <- n * t(A %*% x_bar) %*% inv(A %*% S %*% t(A)) %*% (A %*% x_bar)
 # T0 = 90.55744
 T0
 
-# Calculate Tc
+
 # Tc = C* = (n-1)(q-1)/(n-q+1) * F_alpha(q-1, n-q+1)
 # n: size of the sample = 40
 n
